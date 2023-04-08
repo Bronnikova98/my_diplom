@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+    nginx:
+        image: nginx:alpine
+        container_name: diplom_nginx
+        ports:
+          - 8080:80
+        volumes:
+          - ./src:/var/www
+          - ./nginx/conf.d/:/etc/nginx/conf.d/
+          - ./src/storage/app/public:/var/www/public/storage:ro
+          - ./src/public:/var/www/html/public:ro
+        depends_on:
+          - app
+          - db
+
+    app:
+      container_name: diplom_avrora
+      build: 
+        context: ./php
+        dockerfile: Dockerfile
+      volumes:
+        - ./src:/var/www
+      ports:
+        - "9000:9000"
+      working_dir: /var/www
+
+    db:
+        image : mysql
+        container_name : diplom_mysql
+        volumes:
+          - ./mysql/data:/var/lib/mysql
+        ports:
+          - 3306:3306
+        environment:
+          MYSQL_DATABASE: diplom_avrora_db
+          MYSQL_ROOT_PASSWORD: root
