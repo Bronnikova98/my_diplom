@@ -37,7 +37,7 @@
 
                 <div class="col">
                     <p class="header_addres">г. Нижний Тагил, ул Бобкова, д. 4, кв. 103</p>
-                    <a class="header_show_map" href="">Показать на карте</a>
+                    <a class="header_show_map" href="">{{ __('Показать на карте') }}</a>
                 </div>
 
             </div>
@@ -56,7 +56,7 @@
             <div class="d-flex col-sm-12 col-lg-3 align-items-center justify-content-center">
 
                 <form action="{{ route('login') }}" method="get">
-                    <button class="header_personal_area_btn" type="submit">Личный кабинет</button>
+                    <button class="header_personal_area_btn" type="submit">{{ __('Личный кабинет') }}</button>
                 </form>
 
             </div>
@@ -76,22 +76,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ route('about') }}">О центре</a>
+                            <a class="nav-link active" aria-current="page"
+                                href="{{ route('about') }}">{{ __('О центре') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('news') }}">Новости</a>
+                            <a class="nav-link" href="{{ route('news') }}">{{ __('Новости') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('specialists') }}">Специалисты</a>
+                            <a class="nav-link" href="{{ route('specialists') }}">{{ __('Специалисты') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('patients') }}">Пациентам</a>
+                            <a class="nav-link" href="{{ route('patients') }}">{{ __('Пациентам') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('services') }}">Услуги</a>
+                            <a class="nav-link" href="{{ route('services') }}">{{ __('Услуги') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('contacts') }}">Контакты</a>
+                            <a class="nav-link" href="{{ route('contacts') }}">{{ __('Контакты') }}</a>
                         </li>
 
                     </ul>

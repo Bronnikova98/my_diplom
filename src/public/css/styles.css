@@ -333,8 +333,9 @@ ul {
     padding: 20px;
 }
 
+
+
 .login_form_email_label {
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -344,7 +345,6 @@ ul {
 }
 
 .login_form_password_label {
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -412,6 +412,79 @@ ul {
 .login_reg:hover {
     color: #DB5C86 !important;
 }
+/* Подтверждение сброса через почту */
+.verify_title{
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.verify_background {
+    background-color: #FCF6F5;
+    padding: 20px;
+}
+
+/* Страница ввода почты для сброса пароля */
+.email_title{
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.email_background {
+    background-color: #FCF6F5;
+    padding: 20px;
+}
+
+.email_form_email_label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.email_btn {
+    background-color: #DB5C86;
+    width: 360px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+.email_btn:hover {
+    transform: scale(1.1);
+}
+
+
+/* Страница сброс пароля */
+.reset_title{
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reset_background {
+    background-color: #FCF6F5;
+    padding: 20px;
+}
+
+.reset_form_email_label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.reset_form_password_label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.reset_form_password_confirmation_label{
+    font-size: 18px;
+    font-weight: 500;
+}
 
 /* Страница регистрации */
 .register_title {
@@ -426,8 +499,11 @@ ul {
     padding: 20px;
 }
 
+.register_form_name_label{
+    font-size: 18px;
+    font-weight: 500;
+}
 .register_form_email_label {
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -437,7 +513,6 @@ ul {
 }
 
 .register_form_tel_label {
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -447,7 +522,6 @@ ul {
 }
 
 .register_form_password_label {
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -457,7 +531,6 @@ ul {
 }
 
 .register_form_password_confirmation_label {
-    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -492,6 +565,9 @@ ul {
     font-weight: 600;
     font-size: 18px;
     color: #fff;
+}
+.register_btn:hover {
+    transform: scale(1.1);
 }
 
 .register_log {
