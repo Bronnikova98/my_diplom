@@ -1,0 +1,562 @@
+p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000;
+}
+
+li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+/* Шапка сайта */
+.header_logo_img {
+    max-width: 180px;
+    transition: .3s;
+}
+
+.header_logo_img:hover {
+    transform: translate(0, -6px);
+}
+
+.header_personal_area_btn {
+    background-color: #DB5C86;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.header_personal_area_btn:hover {
+    transform: scale(1.1);
+}
+
+.header_maps_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    margin-bottom: 40px;
+}
+
+.header_addres {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    max-width: 250px;
+}
+
+.header_show_map {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.header_show_map:hover {
+    color: #DB5C86 !important;
+}
+
+.header_phone_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    margin-bottom: 40px;
+}
+
+.header_numbers {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.header_working_hours {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.header_third_party_resources {
+    position: absolute;
+    right: 0;
+}
+
+.header_third_party_resources_btn {
+    background-color: #DB5C86;
+    width: 50px;
+    height: 50px;
+    border-radius: 0% 0% 0% 90%;
+    border: none;
+}
+
+.header_third_party_resources_btn:hover {
+    -webkit-transform: scale(1.1) translate(-4px, 3px);
+    -ms-transform: scale(1.1) translate(-4px, 3px);
+    transform: scale(1.1) translate(-4px, 3px);
+}
+
+.header_view_details_icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+}
+
+.header_ministry_img {
+    max-width: 100px;
+}
+
+.header_coat_img {
+    max-width: 100px;
+}
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+    --bs-offcanvas-width: 200px !important;
+}
+
+.navbar {
+    --bs-navbar-color: #fff !important;
+    --bs-navbar-hover-color: #fff !important;
+    --bs-navbar-active-color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #DB5C86;
+    text-shadow: 1px 2px 1px black;
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav-link:hover {
+    transform: translate(10px);
+}
+
+.navbar-collapse {
+    justify-content: center;
+    display: inline-block;
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-item {
+    justify-content: center;
+}
+
+.footer_container {
+    padding-top: 40px;
+}
+
+/* Подвал сайта */
+.footer_line {
+    height: 40px;
+    background-color: #DB5C86;
+}
+
+.footer_copyright {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.footer_title {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.footer_menu_item {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.footer_menu_item a:hover {
+    color: #DB5C86;
+}
+
+.footer_whatsapp_icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer_vk_icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.footer_btn {
+    position: absolute;
+    right: 0;
+}
+
+.footer_btn_up {
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.footer_btn_up::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("/uploads/heart_balloon.png");
+}
+
+.footer_btn_up_hide {
+    display: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.footer_container_info {
+    padding-left: 90px;
+}
+
+.footer_container_center {
+    padding-left: 90px;
+}
+
+.footer_container_profile {
+    padding-left: 90px;
+}
+
+.footer_container_social {
+    padding-left: 90px;
+}
+
+/* Главная страница сайта */
+.home_background {
+    background-color: #FCF6F5;
+    padding: 10px;
+}
+
+.home_carousel {
+    padding: 0px;
+}
+
+#carouselExampleFade {
+    max-height: 480px;
+}
+
+.carousel-item {
+    height: 480px;
+    background-size: cover;
+}
+
+.home_carousel_indicator {
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    border: 1px solid #000 !important;
+}
+
+.home_carousel_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_carousel_text p {
+    max-width: 600px;
+    font-size: 24px;
+    font-weight: 800;
+    background-color: #f7d9d28b;
+
+    -webkit-text-stroke: 1.2px #272424;
+    -webkit-text-fill-color: white;
+    padding: 10px;
+    transform: scale(1, 1.1);
+}
+
+.home_subtitle {
+    color: #000;
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+
+/* Страница о центре */
+.about_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Страница авторизации */
+.login_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.login_background {
+    background-color: #FCF6F5;
+    padding: 20px;
+}
+
+.login_form_email_label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login_form_email_input {
+    height: 40px;
+}
+
+.login_form_password_label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login_form_password_input {
+    height: 40px;
+}
+
+.required::before {
+    content: '*';
+    color: #DB5C86;
+    margin-right: 3px;
+}
+
+.form-control:focus {
+    border-color: #DB5C86;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #fff;
+}
+
+.login_form_checkbox {
+    margin-right: 10px;
+}
+
+.login_form_checkbox_label {
+    font-size: 1rem;
+}
+
+.form-check-input:focus {
+    border-color: #DB5C86;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #fff;
+}
+
+.form-check-input:checked {
+    background-color: #DB5C86;
+    border-color: #DB5C86;
+}
+
+.login_btn {
+    background-color: #DB5C86;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.login_recovery {
+    font-size: 16px;
+}
+
+.login_recovery:hover {
+    color: #DB5C86 !important;
+}
+
+.login_reg {
+    font-size: 16px;
+}
+
+.login_reg:hover {
+    color: #DB5C86 !important;
+}
+
+/* Страница регистрации */
+.register_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.register_background {
+    background-color: #FCF6F5;
+    padding: 20px;
+}
+
+.register_form_email_label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.register_form_email_input {
+    height: 40px;
+}
+
+.register_form_tel_label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.register_form_tel_input {
+    height: 40px;
+}
+
+.register_form_password_label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.register_form_password_input {
+    height: 40px;
+}
+
+.register_form_password_confirmation_label {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.register_form_password_confirmation_input {
+    height: 40px;
+}
+
+.register_processing {
+    color: #DB5C86;
+}
+
+.register_processing:hover {
+    color: #DB5C86;
+    text-decoration: underline !important;
+}
+
+.register_form_checkbox {
+    margin-right: 10px;
+}
+
+.register_form_checkbox_label {
+    font-size: 1rem;
+}
+
+.register_btn {
+    background-color: #DB5C86;
+    width: 210px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+}
+
+.register_log {
+    font-size: 16px;
+}
+
+.register_log:hover {
+    color: #DB5C86 !important;
+}
+
+/* Страница новости */
+.news_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.news_sorting_btn {
+    background-color: #DB5C86;
+    width: 60px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news_sorting_btn:hover {
+    transform: scale(1.1);
+}
+
+.news_sorting_icon {
+    width: 30px;
+}
+
+/* Страница контакты */
+.contacts_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Страница пациентам */
+.patients_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Страница услуги */
+.services_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Страница специалисты */
+.specialists_title {
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
