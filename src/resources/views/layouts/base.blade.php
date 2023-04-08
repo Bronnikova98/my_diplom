@@ -28,6 +28,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script>
         <script src="/js/btn_up.js"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/37.0.1/classic/ckeditor.js"></script>
         @stack('js')
     </body>
 </html>

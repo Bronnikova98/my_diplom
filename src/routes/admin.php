@@ -14,7 +14,7 @@ Route::prefix('admin')->group(function () {
 
     Route::get('news', [NewsController::class, 'index'])->name('admin.news');
     Route::get('news/create', [NewsController::class, 'create'])->name('admin.news.create');
-    // Route::post('news/upload', [NewsController::class, 'upload'])->name('admin.news.upload');
+    Route::post('news/upload', [NewsController::class, 'upload'])->name('admin.news.upload');
     Route::post('news', [NewsController::class, 'store'])->name('admin.news.store');
     Route::get('news/{post}', [NewsController::class, 'show'])->name('admin.news.show');
     Route::get('news/{post}/edit', [NewsController::class, 'edit'])->name('admin.news.edit');

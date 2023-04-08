@@ -29,7 +29,7 @@ class NewsController extends Controller
 
     public function store(Request $request)
     {
-        echo $request->input('content');
+        echo $request->input('editor');
     }
 
     public function show($post)
@@ -61,26 +61,27 @@ class NewsController extends Controller
 
     public function upload(Request $request)
     {
-        if($request->hasFile('file')) {
+        if ($request->hasFile('upload')) {
+           
+            $filenamewithextension = $request->file('upload')->getClientOriginalName();
+
             
-            $filenamewithextension = $request->file('file')->getClientOriginalName();
-     
             $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
-     
+
+           
+            $extension = $request->file('upload')->getClientOriginalExtension();
+
+           
+            $filenametostore = $filename . '_' . time() . '.' . $extension;
+
             
-            $extension = $request->file('file')->getClientOriginalExtension();
-     
+            $request->file('upload')->storeAs('public/uploads', $filenametostore);
             
-            $filenametostore = $filename.'_'.time().'.'.$extension;
-     
-            
-            $request->file('file')->storeAs('src/public/images', $filenametostore);
-     
-            
-            $path = asset('src/storage/uploads/'.$filenametostore);
-     
-            echo $path;
-            exit;
+
+            echo json_encode([
+                'default' => asset('storage/uploads/' . $filenametostore),
+                
+            ]);
         }
     }
 }
